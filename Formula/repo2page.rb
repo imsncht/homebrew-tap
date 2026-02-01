@@ -5,21 +5,21 @@
 class Repo2page < Formula
   desc "Convert repositories into single, portable structure-preserving documents."
   homepage "https://github.com/imsncht/repo2page"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/imsncht/repo2page/releases/download/v1.0.4/repo2page_1.0.4_darwin_amd64.tar.gz"
-      sha256 "0d5e98d3a6a7a5f471ca53302671dc7b06e232b802cbdaa12f1200f3a61346ef"
+      url "https://github.com/imsncht/repo2page/releases/download/v1.0.5/repo2page_1.0.5_darwin_amd64.tar.gz"
+      sha256 "23e2a6ebd68cc44f48c8368e6a1052ef8e1575b94f52218ea4765411d8fa9aab"
 
       def install
         bin.install "repo2page"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/imsncht/repo2page/releases/download/v1.0.4/repo2page_1.0.4_darwin_arm64.tar.gz"
-      sha256 "dc033118ff619847d70c89952d372469ccae57d9af49bb422e98a75485461cb7"
+      url "https://github.com/imsncht/repo2page/releases/download/v1.0.5/repo2page_1.0.5_darwin_arm64.tar.gz"
+      sha256 "78ae21734c82cea3f511376418aeadc38704c58cfd148136efd150fd6d648aa8"
 
       def install
         bin.install "repo2page"
@@ -29,15 +29,15 @@ class Repo2page < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imsncht/repo2page/releases/download/v1.0.4/repo2page_1.0.4_linux_amd64.tar.gz"
-      sha256 "c01b8845d42bb9f8c9f9c9e036fb84ae413ab1712d7347196dc67383da6e057c"
+      url "https://github.com/imsncht/repo2page/releases/download/v1.0.5/repo2page_1.0.5_linux_amd64.tar.gz"
+      sha256 "a5943bb435b15633d0e5c1ef5ee26e0d5c15804cf4620e171060b6f3c17a2eb9"
       def install
         bin.install "repo2page"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imsncht/repo2page/releases/download/v1.0.4/repo2page_1.0.4_linux_arm64.tar.gz"
-      sha256 "106534019952671217206ffecf3275171bc68312214f3106b40acd917350cfd6"
+      url "https://github.com/imsncht/repo2page/releases/download/v1.0.5/repo2page_1.0.5_linux_arm64.tar.gz"
+      sha256 "7e434546a556b2099b1629ec4f40633f3fa096835510199f4075823471ce7958"
       def install
         bin.install "repo2page"
       end
